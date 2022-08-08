@@ -13,16 +13,16 @@ public class C03_VerifyPageTitle {
         driver.get("https://www.amazon.com");
         //Sayfa basliginin (title) “amazon” oldugunu dogrulayin. (verify)
 
-        String expectedTitle="amazon";
-        String actualTitle= driver.getTitle();
+        String expectedTitle="amazon"; //beklenen baslik
+        String actualTitle= driver.getTitle(); //actuel basligi getir.
 
-        if (expectedTitle.equals(actualTitle)){
-            System.out.println("title beklenen deger ile ayni, test PASS");
+        if (expectedTitle.equals(actualTitle)){ //actuel baslik ile beklenen basligi karislastir
+            System.out.println("title beklenen deger ile ayni, test PASS"); //ayni ise bunu yazdir
         }else{
-            System.out.println("title beklenenden farkli, test FAILED");
-            System.out.println("aktuel title : " + driver.getTitle());
+            System.out.println("title beklenenden farkli, test FAILED"); //ayni degilse bunu yazdir
+            System.out.println("aktuel title : " + driver.getTitle());//ve guncel basligi yazdir
         }
 
-        driver.close();
+        driver.close();//sayfayi kapat
     }
 }

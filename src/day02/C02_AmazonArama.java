@@ -16,8 +16,10 @@ public class C02_AmazonArama {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.amazon.com");
+        driver.manage().window().maximize();
+
         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
-        aramaKutusu.sendKeys("java" + Keys.ENTER);
+        aramaKutusu.sendKeys("Samsung tablet" + Keys.ENTER);
 
         // class="a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-c a-aui_killswitch_csa_logger_372963-t1
         // a-aui_launch_cardui_a11y_fix_346896-t1 a-aui_launch_expander_ally_fix_354901-t1
@@ -31,5 +33,7 @@ public class C02_AmazonArama {
         // webelementler obje oldugu icin direk yazdirilamazlar
         // webelemntin sahip oldugu yaziyi string olarak yazdirmak icin
         // getText() method u kullanilir
+
+        driver.close();
     }
 }

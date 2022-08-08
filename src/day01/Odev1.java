@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Odev1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver","/Users/selcukkardes/Documents/Selenium Libraries/Drivers/chromedriver");
 
@@ -70,7 +70,6 @@ public class Odev1 {
         else {
 
             System.out.println("Bu title Walmart.com icermiyor = " + actualTitle2);
-
         }
 
         // 6. Tekrar youtube sayfasina donun
@@ -84,6 +83,11 @@ public class Odev1 {
         // 8. Sayfayi tam sayfa (maximize) yapin
 
         driver.manage().window().maximize();
+
+        //8.1 sayfayi minize edin
+        Thread.sleep(2000);
+        driver.manage().window().minimize();
+        Thread.sleep(2000);
 
         // 9.Browser’i kapatin
 

@@ -13,8 +13,8 @@ public class C04_VerifyPageUrl {
         driver.get("https://www.techproeducation.com");
         //Sayfa URL’inin www.techproeducation.com oldugunu dogrulayin
 
-        String expectedUrl= "www.techproeducation.com";
-        String actualUrl= driver.getCurrentUrl();
+        String expectedUrl= "www.techproeducation.com";//beklenen url
+        String actualUrl= driver.getCurrentUrl();//guncel url
 
         if (expectedUrl.equals(actualUrl)){
             System.out.println("Test PASSED");
