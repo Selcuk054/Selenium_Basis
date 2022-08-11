@@ -16,7 +16,7 @@ public class C02_AmazonArama {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.amazon.com");
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();//weychguycvhsvcaycs
 
         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("Samsung tablet" + Keys.ENTER);
