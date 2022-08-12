@@ -12,6 +12,7 @@ public class Q05_DriverControl {
         WebDriver driver=new ChromeDriver();
 
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12.20));
+        System.out.println(driver.manage().window());
 
 
     }
