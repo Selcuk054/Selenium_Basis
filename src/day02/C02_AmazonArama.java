@@ -34,6 +34,8 @@ public class C02_AmazonArama {
         // webelemntin sahip oldugu yaziyi string olarak yazdirmak icin
         // getText() method u kullanilir
 
+        System.out.println("Hey dunya github deneme");
+
         driver.close();
     }
 }
