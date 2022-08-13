@@ -14,6 +14,8 @@ public class Q04_DriverManageMethodlari {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
         //1 driver.manage().window().getSize();
 

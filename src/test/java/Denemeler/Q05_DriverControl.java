@@ -13,6 +13,7 @@ public class Q05_DriverControl {
 
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12.20));
         System.out.println(driver.manage().window());
+        System.out.println("Hey dunya kontrol github");
 
 
     }
