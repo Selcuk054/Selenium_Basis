@@ -1,4 +1,4 @@
-package Denemeler;
+package Denemeler_01;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

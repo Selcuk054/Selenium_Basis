@@ -1,20 +1,14 @@
-package Denemeler;
+package Denemeler_01;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-public class Q05_DriverControl {
+public class Q1_Maven {
     public static void main(String[] args) {
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
-
-       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12.20));
-        System.out.println(driver.manage().window());
-        System.out.println("Hey dunya kontrol github");
-
-
+        driver.get("https://www.bol.com/nl/nl/");
     }
 }

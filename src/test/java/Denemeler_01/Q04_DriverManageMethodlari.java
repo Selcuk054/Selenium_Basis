@@ -1,4 +1,4 @@
-package Denemeler;
+package Denemeler_01;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
@@ -6,7 +6,6 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Q04_DriverManageMethodlari {
